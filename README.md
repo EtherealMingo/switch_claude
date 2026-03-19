@@ -91,6 +91,50 @@ Each profile is stored as `~/.claude/settings-{name}.json`. Switching profiles u
 
 ---
 
+## Development / 本地开发
+
+**Prerequisites / 前置条件**
+- [Raycast](https://raycast.com) installed / 已安装 Raycast
+- Node.js 18+ / Node.js 18 及以上
+- [Claude Code](https://claude.ai/code) installed / 已安装 Claude Code
+
+**Clone and run / 克隆并运行**
+
+```bash
+git clone https://github.com/EtherealMingo/switch_claude.git
+cd switch_claude
+npm install
+npm run dev
+```
+
+`npm run dev` starts a file watcher and hot-reloads the extension inside Raycast automatically. Open Raycast and search for **Switch Claude Proxy** to see it live.
+
+`npm run dev` 启动文件监听，修改代码后 Raycast 自动热重载，无需手动刷新。打开 Raycast 搜索 **Switch Claude Proxy** 即可实时查看效果。
+
+**Build / 构建**
+
+```bash
+npm run build   # output to dist/
+```
+
+**Project structure / 项目结构**
+
+```
+src/
+├── switch-claude.tsx      # Main command / 主命令入口
+├── types.ts               # TypeScript type definitions / 类型定义
+├── constants.ts           # Path constants & provider templates / 路径常量和代理模板
+└── utils/
+    ├── config.ts          # Profile scanning & active detection / 扫描配置文件
+    ├── switch.ts          # Symlink switching / 符号链接切换
+    ├── file.ts            # Atomic CRUD & backup / 原子写入、增删改、备份
+    ├── validate.ts        # Name & URL validation / 名称和 URL 校验
+    ├── connectivity.ts    # Connectivity test / 连通性测试
+    └── transfer.ts        # Import & export / 导入导出
+```
+
+---
+
 ## Privacy / 隐私说明
 
 All data stays local. API keys are stored in `~/.claude/settings-{name}.json` on your own machine. Nothing is sent anywhere except when you explicitly test connectivity (a single GET request to your configured proxy's `/v1/models` endpoint).
