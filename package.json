@@ -3,7 +3,7 @@
   "title": "Claude Proxy Switcher",
   "description": "Visually manage and switch between multiple Claude Code proxy configurations · 可视化管理多个 Claude Code 代理配置，一键切换",
   "icon": "assets/extension-icon.png",
-  "author": "mingo",
+  "author": "EtherealMingo",
   "categories": ["Developer Tools"],
   "license": "MIT",
   "commands": [
