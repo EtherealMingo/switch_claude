@@ -25,24 +25,31 @@ This extension gives you a clean GUI to create, switch, and manage all your prox
 ## ✨ Features / 功能
 
 - ⚡ **One-key switching** — switch the active proxy in under a second
+
   **一键切换** — 不到一秒完成代理切换
 
 - 🗂️ **Profile management** — create, edit, rename, and delete proxy configurations
+
   **配置管理** — 新建、编辑、重命名、删除代理配置
 
 - 🌐 **Connectivity test** — verify a proxy is reachable before switching (no token consumed)
+
   **连通性测试** — 切换前验证代理是否可用（不消耗 token）
 
 - 🤖 **Quick model update** — change the model without re-entering your API key
+
   **快速换模型** — 无需重新填写 API Key，直接更新模型
 
 - 📤 **Import / Export** — share profiles with teammates; API keys are masked on export
+
   **导入 / 导出** — 与他人共享配置；导出时 API Key 自动脱敏
 
 - 🛡️ **Auto backup** — profiles are backed up to `~/.claude/backups/` before any destructive operation
+
   **自动备份** — 删除或修改前自动备份到 `~/.claude/backups/`
 
 - 🧙 **Init wizard** — first-time setup converts your existing `settings.json` into the multi-profile system automatically
+
   **初始化向导** — 首次使用时自动将现有 `settings.json` 转换为多配置体系
 
 ---
@@ -58,15 +65,19 @@ Each profile is stored as `~/.claude/settings-{name}.json`. Switching profiles u
 ## 🚀 Getting Started / 快速开始
 
 1. 📥 Open Raycast and search for **Switch Claude Proxy**
+
    打开 Raycast，搜索 **Switch Claude Proxy**
 
 2. 🧙 If you already have a `~/.claude/settings.json`, the init wizard will appear — give your current config a name (e.g. `default`) and confirm
+
    如果已有 `~/.claude/settings.json`，会出现初始化向导——为现有配置命名（如 `default`）后确认
 
 3. ➕ Press **⌘+N** to add more proxy profiles
+
    按 **⌘+N** 新增更多代理配置
 
 4. ↩️ Press **Enter** on any profile to switch to it
+
    在任意配置上按 **Enter** 即可切换
 
 ---
@@ -90,6 +101,7 @@ Each profile is stored as `~/.claude/settings-{name}.json`. Switching profiles u
 ## 📋 Requirements / 环境要求
 
 - 🖥️ [Claude Code](https://claude.ai/code) installed (`~/.claude/` directory must exist)
+
   已安装 Claude Code（`~/.claude/` 目录必须存在）
 - 🍎 macOS 12 or later / macOS 12 及以上
 
