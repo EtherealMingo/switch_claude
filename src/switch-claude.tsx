@@ -256,10 +256,10 @@ function ProfileForm({ profile, onSuccess }: ProfileFormProps) {
       {showSecurity && (
         <Form.Description
           title="⚠️ 安全提示"
-          text="API Key 以明文存储在 ~/.claude 目录，请勿将配置文件提交到 Git 仓库。"
+          text="API Key 以明文存储在 ~/.claude 目录，请勿将配置文件提供给他人。建议创建专用 API Key，并定期更新。"
         />
       )}
-    </Form>
+    </Form> 
   );
 }
 

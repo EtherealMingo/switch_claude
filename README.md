@@ -8,9 +8,9 @@ Visually manage and switch between multiple Claude Code proxy configurations wit
 
 ## 🤔 Why / 为什么需要这个工具
 
-Claude Code supports third-party proxies via `~/.claude/settings.json`. If you use multiple providers (e.g. Kimi, LongCat, iWhale, official Anthropic), you previously had to edit this file manually or maintain a shell script.
+Claude Code supports third-party proxies via `~/.claude/settings.json`. If you use multiple providers (e.g. Kimi, LongCat, official Anthropic), you previously had to edit this file manually or maintain a shell script.
 
-Claude Code 通过 `~/.claude/settings.json` 支持第三方代理。如果你同时使用多家代理（如 Kimi、LongCat、iWhale、Anthropic 官方），以前只能手动编辑文件或维护 Shell 脚本。
+Claude Code 通过 `~/.claude/settings.json` 支持第三方代理。如果你同时使用多家代理（如 Kimi、LongCat、Anthropic 官方），以前只能手动编辑文件或维护 Shell 脚本。
 
 This extension gives you a clean GUI to create, switch, and manage all your proxy profiles.
 
