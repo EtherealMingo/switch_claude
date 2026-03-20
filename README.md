@@ -8,13 +8,17 @@ Visually manage and switch between multiple Claude Code proxy configurations wit
 
 ## 🤔 Why / 为什么需要这个工具
 
-Claude Code supports third-party proxies via `~/.claude/settings.json`. If you use multiple providers (e.g. LongCat, iWhale, official Anthropic), you previously had to edit this file manually or maintain a shell script.
+Claude Code supports third-party proxies via `~/.claude/settings.json`. If you use multiple providers (e.g. Kimi, LongCat, iWhale, official Anthropic), you previously had to edit this file manually or maintain a shell script.
 
-Claude Code 通过 `~/.claude/settings.json` 支持第三方代理。如果你同时使用多家代理（如 LongCat、iWhale、Anthropic 官方），以前只能手动编辑文件或维护 Shell 脚本。
+Claude Code 通过 `~/.claude/settings.json` 支持第三方代理。如果你同时使用多家代理（如 Kimi、LongCat、iWhale、Anthropic 官方），以前只能手动编辑文件或维护 Shell 脚本。
 
 This extension gives you a clean GUI to create, switch, and manage all your proxy profiles.
 
 这个扩展为你提供了一个干净的 GUI，用于创建、切换和管理所有代理配置。
+
+
+
+![Claude Proxy Switcher](metadata/1.png)
 
 ---
 
@@ -69,17 +73,17 @@ Each profile is stored as `~/.claude/settings-{name}.json`. Switching profiles u
 
 ## ⌨️ Keyboard Shortcuts / 快捷键
 
-| Shortcut | Action | 说明 |
-|---|---|---|
-| `Enter` | ⚡ Switch to selected profile | 切换到选中配置 |
-| `⌘ T` | 🌐 Test connectivity | 测试连通性 |
-| `⌘ N` | ➕ New profile | 新建配置 |
-| `⌘ E` | ✏️ Edit profile | 编辑配置 |
-| `⌘ M` | 🤖 Change model only | 仅修改模型 |
-| `⌘ D` | 🗑️ Delete profile | 删除配置 |
-| `⌘ ⇧ E` | 📤 Export profile (API key masked) | 导出配置（API Key 脱敏） |
-| `⌘ ⇧ I` | 📥 Import profile from JSON | 从 JSON 导入配置 |
-| `⌘ R` | 🔄 Refresh list | 刷新列表 |
+| Shortcut | Action                             | 说明                     |
+| -------- | ---------------------------------- | ------------------------ |
+| `Enter`  | ⚡ Switch to selected profile      | 切换到选中配置           |
+| `⌘ T`    | 🌐 Test connectivity               | 测试连通性               |
+| `⌘ N`    | ➕ New profile                     | 新建配置                 |
+| `⌘ E`    | ✏️ Edit profile                    | 编辑配置                 |
+| `⌘ M`    | 🤖 Change model only               | 仅修改模型               |
+| `⌘ D`    | 🗑️ Delete profile                  | 删除配置                 |
+| `⌘ ⇧ E`  | 📤 Export profile (API key masked) | 导出配置（API Key 脱敏） |
+| `⌘ ⇧ I`  | 📥 Import profile from JSON        | 从 JSON 导入配置         |
+| `⌘ R`    | 🔄 Refresh list                    | 刷新列表                 |
 
 ---
 
@@ -94,6 +98,7 @@ Each profile is stored as `~/.claude/settings-{name}.json`. Switching profiles u
 ## 🛠️ Development / 本地开发
 
 **Prerequisites / 前置条件**
+
 - [Raycast](https://raycast.com) installed / 已安装 Raycast
 - Node.js 18+ / Node.js 18 及以上
 - [Claude Code](https://claude.ai/code) installed / 已安装 Claude Code
